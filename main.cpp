@@ -3,11 +3,12 @@
 
 int main() {
 //	FOR TESTING
- 	Bookshelf bookshelf;
+ 	Bookshelf shelf1;
 	Book math("Mathematics", "Franz");
-	bookshelf.bookshelfAddBook(math);
-	bookshelf.bookshelfDisplay();
+	shelf1.bookshelfAddBook(math);
+	shelf1.bookshelfDisplay();
 	User rets("rets", "missu", "user");
+	rets.userBorrow(shelf1);
 	rets.userDisplayInventory();
  
 	
